@@ -1,0 +1,163 @@
+{
+    "501": {
+        "name": "STATISTICS",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA"  },
+            {"name": "etherStatsOversizePkts",                     "enterprise": "UAM"  },
+            {"name": "etherStatsFragments",                        "enterprise": "UAM"  },
+            {"name": "etherStatsJabbers",                          "enterprise": "UAM"  },
+            {"name": "etherStatsCollisions",                       "enterprise": "UAM"  },
+            {"name": "etherStatsPkts64Octets",                     "enterprise": "UAM"  },
+            {"name": "etherStatsPkts65to127Octets",                "enterprise": "UAM"  },
+            {"name": "etherStatsPkts128to255Octets",               "enterprise": "UAM"  },
+            {"name": "etherStatsPkts256to511Octets",               "enterprise": "UAM"  },
+            {"name": "etherStatsPkts512to1023Octets",              "enterprise": "UAM"  },
+            {"name": "etherStatsPkts1024to1518Octets",             "enterprise": "UAM"  },
+            {"name": "etherStatsStatus",                           "enterprise": "UAM"  },
+            {"name": "etherStatsDropEvents",                       "enterprise": "UAM"  },
+            {"name": "etherStatsOctets",                           "enterprise": "UAM"  },
+            {"name": "etherStatsPkts",                             "enterprise": "UAM"  },
+            {"name": "etherStatsBroadcastPkts",                    "enterprise": "UAM"  },
+            {"name": "etherStatsMulticastPkts",                    "enterprise": "UAM"  },
+            {"name": "etherStatsCRCAlignErrors",                   "enterprise": "UAM"  },
+            {"name": "etherStatsUndersizePkts",                    "enterprise": "UAM"  }
+
+        ]
+    },
+    "502": {
+        "name": "RAM",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA"  },
+            {"name": "agentDRAMutilizationTotalDRAM",           "enterprise": "UAM"  },
+            {"name": "agentDRAMutilizationUsedDRAM",            "enterprise": "UAM"  },
+            {"name": "agentDRAMutilization",                    "enterprise": "UAM"  }
+        ]
+    },
+
+    "503": {
+        "name": "CPUS",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA"  },
+            {"name": "agentCPUutilizationIn5sec",           "enterprise": "UAM"  },
+            {"name": "agentCPUutilizationIn1min",           "enterprise": "UAM"  },
+            {"name": "agentCPUutilizationIn5min",           "enterprise": "UAM"  }
+        ]
+    },
+    
+    "504": {
+        "name": "FLASH",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA"  },
+            {"name": "agentFLASHutilizationTotalFLASH",    "enterprise": "UAM"  },
+            {"name": "agentFLASHutilizationUsedFLASH",     "enterprise": "UAM"  },
+            {"name": "agentFLASHutilization",              "enterprise": "UAM"  }
+        ]
+    },
+    "505": {
+        "name": "ifTable",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA" },
+            {"name": "ifIndex",                      "enterprise": "UAM"  },
+            {"name": "ifMtu",                        "enterprise": "UAM"  }, 
+            {"name": "ifSpeed",                      "enterprise": "UAM"  },
+            {"name": "ifInOctets",                   "enterprise": "UAM"  },
+            {"name": "ifInUcastPkts",                "enterprise": "UAM"  },
+            {"name": "ifInNUcastPkts",               "enterprise": "UAM"  },
+            {"name": "ifInDiscards",                 "enterprise": "UAM"  },
+            {"name": "ifInErrors",                   "enterprise": "UAM"  },
+            {"name": "ifInUnknownProtos",            "enterprise": "UAM"  },
+            {"name": "ifOutOctets",                  "enterprise": "UAM"  },
+            {"name": "ifOutUcastPkts",               "enterprise": "UAM"  },
+            {"name": "ifOutNUcastPkts",              "enterprise": "UAM"  },
+            {"name": "ifOutDiscards",                "enterprise": "UAM"  },
+            {"name": "ifOutErrors",                  "enterprise": "UAM"  },
+            {"name": "ifOutQLen",                    "enterprise": "UAM"  },
+            {"name": "ifDescr",                      "enterprise": "UAM","length": 65535  },
+            {"name": "ifType",                       "enterprise": "UAM", "length": 65535  },
+            {"name": "ifPhysAddress",                "enterprise": "UAM", "length": 65535  },
+            {"name": "ifAdminStatus",                "enterprise": "UAM", "length": 65535 },
+            {"name": "ifOperStatus",                 "enterprise": "UAM", "length": 65535  },
+            {"name": "ifLastChange",                 "enterprise": "UAM", "length": 65535  },
+            {"name": "ifSpecific",                   "enterprise": "UAM", "length": 65535 }
+        ]
+    },
+    "256": {
+        "name": "L2 Traffic",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA"  },
+            {"name": "flowDirection",                "enterprise": "IANA"  },
+            {"name": "sourceMacAddress",             "enterprise": "IANA"  },
+            {"name": "destinationMacAddress",        "enterprise": "IANA"  },
+            {"name": "ethernetType",                 "enterprise": "IANA"  },
+            {"name": "ethernetHeaderLength",         "enterprise": "IANA"  },
+            {"name": "flowStartDeltaMicroseconds",   "enterprise": "IANA"  },
+            {"name": "flowEndDeltaMicroseconds",     "enterprise": "IANA"  },
+            {"name": "packetDeltaCount",             "enterprise": "IANA"  },
+            {"name": "layer2OctetDeltaCount",        "enterprise": "IANA"  },
+            {"name": "flowEndReason",                "enterprise": "IANA"  }
+        ]
+    },
+    "300": {
+        "name": "L0 Link",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA"  },
+            {"name": "rxPowerDecibelMilliwatts",     "enterprise": "UPC"   }
+        ]
+    },
+    "310": {
+        "name": "L0 Transponder",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA"  },
+            {"name": "tunnelSourceIPv4Address",      "enterprise": "VMWARE"},
+            {"name": "tunnelDestinationIPv4Address", "enterprise": "VMWARE"},
+            {"name": "direction",                    "enterprise": "UPC"   },
+            {"name": "ber",                          "enterprise": "UPC"   },
+            {"name": "rxPowerDecibelMilliwatts",     "enterprise": "UPC"   },
+            {"name": "txPowerDecibelMilliwatts",     "enterprise": "UPC"   }
+        ]   
+    },
+    "330": {
+        "name": "OSA",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA", "length": 4  },
+            {"name": "stlPaginationIndex",           "enterprise": "UPC"   },
+            {"name": "stlPaginationTotal",           "enterprise": "UPC"   },
+            {"name": "subTemplateList",              "enterprise": "IANA"  },
+            {"name": "paddingOctets",                "enterprise": "IANA", "length": 65535 }
+        ]
+    },
+    "340": {
+        "name": "OSC Transmitter",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA"  }
+        ]
+    },
+    "350": {
+        "name": "OSC Receiver",
+        "fields": [
+            {"name": "observationPointId",           "enterprise": "IANA"  },
+            {"name": "ber",                          "enterprise": "UPC"   }
+        ]
+    },
+    "351": {
+        "name": "OSC Receiver",
+        "fields": [
+            {"name": "observationGroupId",           "enterprise": "UPC"   },
+            {"name": "ber",                          "enterprise": "UPC"   }
+        ]
+    },
+    "10000": {
+        "name": "SubTemplate: Frequency(THz)-Power(dBm)",
+        "fields": [
+            {"name": "frequencyGigaHertz",           "enterprise": "UPC"   },
+            {"name": "rxPowerDecibelMilliwatts",     "enterprise": "UPC"   }
+        ]
+    },
+    "10001": {
+        "name": "SubTemplate: Frequency(THz)-Power(dBm) using integers for CNIT",
+        "fields": [
+            {"name": "frequencyGigaHertzInt",        "enterprise": "UPC"   },
+            {"name": "rxPowerDecibelMilliwattsInt",  "enterprise": "UPC"   }
+        ]
+    }
+}

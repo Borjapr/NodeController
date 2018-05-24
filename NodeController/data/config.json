@@ -1,0 +1,27 @@
+{
+    "logger": {
+        "screenFormatter": "[%(asctime)s] %(levelname)-7s %(name)-10s: %(message)s",
+        "fileName": "data/agent.log",
+        "fileSeverity": "DEBUG",
+        "fileFormatter": "[%(asctime)s] %(levelname)-7s %(name)-10s: %(message)s",
+        "screenSeverity": "DEBUG"
+    },
+    "manager": {
+        "ieacp": {
+            "listenPort": 8000,
+            "listenIP": "0.0.0.0",
+            "numWorkers": 10
+        }
+    },
+    "templatesCatalog": {
+        "definitionsFile": "data/IPFIX_templates.json"
+    },
+    "ipfixExporter": {
+        "transport": "udp",
+        "localIP": "127.0.0.1",
+        "serverIP": "127.0.0.1",
+        "serverPort": 4739,
+        "templateRefreshTimeout": 60
+    }
+
+}

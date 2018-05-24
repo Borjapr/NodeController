@@ -1,0 +1,6 @@
+[submodule "Framework/Protocol/pyIPFIX"]
+	path = Framework/Protocol/pyIPFIX
+	url = git@github.com:lgifre/pyIPFIX.git
+[submodule "Framework/pyTools"]
+	path = Framework/Lib
+	url = git@github.com:lgifre/pyTools.git

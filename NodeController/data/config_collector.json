@@ -1,0 +1,14 @@
+{
+	"logger": {
+		"screenSeverity": "INFO",
+		"screenFormatter": "[%(asctime)s] %(levelname)-7s %(name)-7s: %(message)s",
+		"fileSeverity": "INFO",
+		"fileFormatter": "[%(asctime)s] %(levelname)-7s %(name)-7s: %(message)s",
+		"fileName": "data/collector.log"
+	},
+	"ipfixCollector": {
+		"transport": "udp",
+		"listenIP": "0.0.0.0",
+		"listenPort": 4739
+	}
+}

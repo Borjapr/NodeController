@@ -1,0 +1,79 @@
+// IEAgent Configuration Protocol (IEACP)
+
+syntax = "proto3";
+
+service Agent {
+	rpc GetVersion(MsgNull)	returns(MsgVersion);
+	rpc Terminate(MsgNull)	returns(MsgNull);
+	rpc Start(MsgNull) returns(MsgNull);
+	rpc CreateAgent(MsgCreateAgent) returns(MsgOK);
+	rpc ModifyAgent(MsgCreateAgent) returns(MsgOK);
+	rpc DeleteAgent(MsgNameAgent) returns(MsgOK);
+	rpc ListAgent(MsgNull) returns(MsgAgents);
+	rpc CreateOP(MsgCreateOP) returns(MsgOK);
+	rpc ModifyOP(MsgCreateOP) returns(MsgOK);
+	rpc StartAgents(MsgNull) returns(MsgNull);
+	rpc StopAgents(MsgNull) returns(MsgNull);
+	rpc OP_List(MsgNull) returns(MsgOPs);
+	rpc DeleteOP(MsgNameAgentOP) returns(MsgOK);
+	rpc EnableOP(MsgNameAgentOP) returns(MsgOK);
+	rpc DisableOP(MsgNameAgentOP) returns(MsgOK);
+}
+
+message MsgNull {}
+
+message MsgOPs {
+	repeated OP ops = 14;
+}
+
+message MsgAgents{
+	repeated MsgCreateAgent agents = 1; 
+}
+message OP {
+	bool enable = 1;
+	string agent = 2;
+	int32 observationDomainId = 8;
+	int32 observationPointId = 3;
+	int32 componentId = 4;
+	string componentType = 5;
+	int32 templateId = 6;
+	int32 monitoringPeriod = 7;
+}
+
+message MsgVersion {
+	string	version = 1;
+}
+
+message MsgCreateAgent {
+	string	nameAgent = 2;
+	string	Type = 12;
+	string	IP = 3;
+	string	Port = 4;
+	string	mpModel = 5;
+}
+
+message MsgCreateOP {
+	string	nameAgent = 2;
+	int32 	observationDomainId = 3;
+	int32	observationPointId = 6;
+	int32	componentId = 7;
+	string	componentType = 8;
+	int32 	templateId = 13;
+	int32	monitoringPeriod = 10;
+}
+
+message MsgNameAgent {
+	string	nameAgent = 2;
+}
+
+message MsgNameAgentOP {
+	string nameAgent = 1;
+	int32 observationPointId = 2;
+	int32 observationDomainId = 3;
+}
+
+message MsgOK {
+	string ok = 11;
+}
+
+
